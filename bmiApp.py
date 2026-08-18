@@ -19,7 +19,7 @@ elif 18.5 <=bmi< 23:
         st.success("คุนมีน้ำหนักอยู่ในเกณ์ (สุขภาพดี)")
 elif 23 <=bmi< 25:
         st.info("คุนมีน้ำหนักเกินเกณ์ (ท้วม)")
- else:
+else:
         st.error("⚠️อ้วน🚨")
 
 st.divider()
