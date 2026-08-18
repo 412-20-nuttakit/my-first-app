@@ -6,6 +6,7 @@ st.write("กรอกข้อมูลน้ำหนักและส่ว�
 wig_kg = st.number_input("กรอกข้อมูลน้ำหนักของคุน (กิโลกรัม):",min_value=1.0,value=1.0)
 hig_cm = st.number_input("กรอกข้อมูลน้ส่วนสูงของคุน (เซนติเมตร):",min_value=1.0,value=1.0)
 
+st.botton("🔥คำนวณหาค่า BMI⚖️")
 if st.botton("🔥คำนวณหาค่า BMI⚖️"):
     hig_m=hig_cm/100
     bmi=wig_kg/(hig_m**2)
