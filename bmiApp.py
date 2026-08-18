@@ -13,11 +13,11 @@ if st.botton("🔥คำนวณหาค่า BMI⚖️"):
     st.write("_____")
     st.header(f"ค่า BMI ของคุน**{bmi:.2f}**")
 
-if bmi <18.5
+if bmi <18.5:
         st.warning("คุนมีน้ำหนักน้อยกว่าเกณ์ (ผอม)")
-    elif 18.5<=bmi<23.0
+    elif 18.5<=bmi<23.0:
         st.success("คุนมีน้ำหนักอยู่ในเกณ์ (สุขภาพดี)")
-    elif 23.0<=bmi<25.0
+    elif 23.0<=bmi<25.0:
         st.info("คุนมีน้ำหนักเกินเกณ์ (ท้วม)")
     else:
         st.error("⚠️อ้วน🚨")
