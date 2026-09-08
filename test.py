@@ -67,7 +67,7 @@ st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    if st.button("📥 ส่งคำตอบ"):
+    if st.button("📥 finshish"):
         st.session_state.is_ended = True
         st.rerun()
 
