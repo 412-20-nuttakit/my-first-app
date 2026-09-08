@@ -8,14 +8,11 @@ if "ans1_val" not in st.session_state:
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
 
-
 def reset_game():
     st.session_state.ans1_val = ""  # เคลียร์ค่าช่องข้อ 1
     st.session_state.ans2_val = ""  # เคลียร์ค่าช่องข้อ 2
     st.session_state.start = time.time()  # เริ่มเวลาใหม่
     st.session_state.is_ended = False  # ปิด Dialog
-
-
 
 @st.dialog("📊 สรุปผลการเล่นเกม")
 def show_result_dialog(ans1, ans2):
@@ -36,7 +33,6 @@ def show_result_dialog(ans1, ans2):
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
-
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
