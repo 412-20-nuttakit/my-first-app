@@ -77,19 +77,24 @@ st.divider()
 
 ans1 = st.text_input(
     "quesution 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
-    value=st.session_state.ans1_val,)
+    value=st.session_state.ans1_val,
+)
 ans2 = st.text_input(
     "quesution 2: Cats love to eat `f _ s h`. 🐟",
-    value=st.session_state.ans2_val,)
+    value=st.session_state.ans2_val,
+)
 ans3 = st.text_input(
     "quesution 3: p_ _ no have 99 keys but cant open a single door",
-    value=st.session_state.ans3_val,)
+    value=st.session_state.ans3_val,
+)
 ans4 = st.text_input(
     "quesution 4:_ _ p _ e r is made with tree bou wight less that a gram",
-    value=st.session_state.ans4_val,)
+    value=st.session_state.ans4_val,
+)
 ans5 = st.text_input(
     "quesution 5:when life give you l _ m _ n you make a drink  ",
-    value=st.session_state.ans5_val,)
+    value=st.session_state.ans5_val,
+)
 
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
@@ -106,7 +111,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     st.rerun()
     
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1,ans2,ans3,ans4,ans5)
 
 st.divider()
 st.write("ณัฏฐกิตติ์ จันทร์ศิริ เลขที่ 10  ม.4/12")
