@@ -52,13 +52,13 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     else:
         st.error(f"❌ quesution 3: incorrect (your answer: '{u_ans3}')")
 
-    if u_ans3 == "paper":
+    if u_ans4 == "paper":
         st.success("✅ quesution 4: correct")
         score += 1
     else:
         st.error(f"❌ quesution 4: incorrect (your answer: '{u_ans4}')")
 
-    if u_ans3 == "lemon":
+    if u_ans5 == "lemon":
         st.success("✅ quesution 5: correct")
         score += 1
     else:
