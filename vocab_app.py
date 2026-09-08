@@ -66,7 +66,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
 
     st.info(f"🏆 final score: {score} point")
 
-    if score == 2:
+    if score == 5:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
