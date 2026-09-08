@@ -24,7 +24,7 @@ def reset_game():
     st.session_state.is_ended = False
 
 @st.dialog("📊 final result")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     st.balloons()
     score = 0
 
@@ -120,7 +120,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     st.rerun()
     
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1,ans2,ans3,ans4,ans5)
+    show_result_dialog(ans1, ans2, ans3, ans4, ans5)
 
 st.divider()
 st.write("ณัฏฐกิตติ์ จันทร์ศิริ เลขที่ 10  ม.4/12")
