@@ -34,7 +34,6 @@ def show_result_dialog(ans1, ans2):
     else:
         st.error(f"❌ ข้อ 2: incorrect (your answer: '{u_ans2}')")
 
-
     st.info(f"🏆 final score: {score} point")
 
     if score == 2:
