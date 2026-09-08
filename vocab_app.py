@@ -90,15 +90,15 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "quesution 3: p_ _ no have 99 keys but cant open a single door",
+    "quesution 3: `p_ _ no` have 99 keys but cant open a single door",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "quesution 4:_ _ p _ e r is made with tree bou wight less that a gram",
+    "quesution 4:`_ _ p _ e` r is made with tree bou wight less that a gram",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "quesution 5:when life give you l _ m _ n you make a drink  ",
+    "quesution 5:when life give you `l _ m _ n` you make a drink  ",
     value=st.session_state.ans5_val,
 )
 
