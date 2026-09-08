@@ -13,7 +13,8 @@ def reset_game():
     st.session_state.ans2_val = ""
     st.session_state.start = time.time() 
     st.session_state.is_ended = False
-
+    
+@st.dialog("📊 final result")
 def show_result_dialog(ans1, ans2):
     st.balloons()
     score = 0
@@ -22,31 +23,24 @@ def show_result_dialog(ans1, ans2):
     u_ans2 = ans2.strip().lower()
 
     if u_ans1 == "apple":
-        st.success("✅ ข้อ 1: ถูกต้อง")
+        st.success("✅ ข้อ 1: correct")
         score += 1
     else:
-        st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
+        st.error(f"❌ ข้อ 1: incorrect (your answer: '{u_ans1}')")
 
     if u_ans2 == "fish":
-        st.success("✅ ข้อ 2: ถูกต้อง")
+        st.success("✅ ข้อ 2: correct")
         score += 1
     else:
-        st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 2: incorrect (your answer: '{u_ans2}')")
 
 
-    st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
+    st.info(f"🏆 final score: {score} point")
 
     if score == 2:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
-
-def show_result_dialog(ans1, ans2):
-    st.balloons()
-    score = 0
-
-    u_ans1 = ans1.strip().lower()
-    u_ans2 = ans2.strip().lower()
 
 st.button("🎮PLAY", on_click=reset_game)
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
