@@ -43,6 +43,7 @@ def show_result_dialog(ans1, ans2):
         st.error("💀 You lose!")
 
 st.button("🎮PLAY", on_click=reset_game)
+
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
     time_left = int(30 - (time.time() - st.session_state.start))
 
