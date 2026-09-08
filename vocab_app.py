@@ -30,6 +30,9 @@ def show_result_dialog(ans1, ans2):
 
     u_ans1 = ans1.strip().lower()
     u_ans2 = ans2.strip().lower()
+    u_ans3 = ans3.strip().lower()
+    u_ans4 = ans4.strip().lower()
+    u_ans5 = ans5.strip().lower()
 
     if u_ans1 == "apple":
         st.success("✅ quesution 1: correct")
@@ -43,7 +46,7 @@ def show_result_dialog(ans1, ans2):
     else:
         st.error(f"❌ quesution 2: incorrect (your answer: '{u_ans2}')")
 
-    if u_ans3 == "paino":
+    if u_ans3 == "piano":
         st.success("✅ quesution 3: correct")
         score += 1
     else:
@@ -90,7 +93,7 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "quesution 3: `p_ _ no` have 99 keys but cant open a single door",
+    "quesution 3: `p_ _ n o` have 99 keys but cant open a single door",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
